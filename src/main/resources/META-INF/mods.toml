@@ -25,7 +25,7 @@ credits="Thanks to Team Abnormals for making Neapolitan" #optional
 authors="Evo, Stardust, AvocadoSpud, Nary" #optional
 
 description='''
-Cookielicious is a Neapolitan cookie addon, it adds a bunch of cookie related stuff.
+Cookielicious is an addon for Neapolitan that adds more cookie themed items.
 '''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
