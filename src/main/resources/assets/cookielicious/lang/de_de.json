@@ -1,0 +1,22 @@
+{
+  "item.minecraft.cookie": "Keks",
+  "item.cookielicious.strawberry_cookie": "Erdbeerplätzchen",
+  "item.cookielicious.vanilla_cookie": "Vanille Keks",
+  "item.cookielicious.sandwich_cookie": "Oreo",
+  "block.cookielicious.strawberry_cookie_tiles": "Erdbeerplätzchenziegel",
+  "block.cookielicious.strawberry_cookie_tile_slab": "Erdbeerplätzchenziegelstufe",
+  "block.cookielicious.strawberry_cookie_tile_stairs": "Erdbeerplätzchenziegeltreppe",
+  "block.cookielicious.strawberry_cookie_tile_vertical_slab": "Vertikale Erdbeerplätzchenziegelstufe",
+  "block.cookielicious.chocolate_cookie_tiles": "Keksziegel",
+  "block.cookielicious.chocolate_cookie_tile_slab": "Keksziegelstufe",
+  "block.cookielicious.chocolate_cookie_tile_stairs": "Keksziegeltreppe",
+  "block.cookielicious.chocolate_cookie_tile_vertical_slab": "Vertikale Keksziegelstufe",
+  "block.cookielicious.vanilla_cookie_tiles": "Vanille Keksziegel",
+  "block.cookielicious.vanilla_cookie_tile_slab": "Vanille Keksziegelstufe",
+  "block.cookielicious.vanilla_cookie_tile_stairs": "Vanille Keksziegeltreppe",
+  "block.cookielicious.vanilla_cookie_tile_vertical_slab": "Vertikale Vanille Keksziegelstufe",
+  "block.cookielicious.sandwich_cookie_tiles": "Oreoziegel",
+  "block.cookielicious.sandwich_cookie_tile_slab": "Oreoziegelstufe",
+  "block.cookielicious.sandwich_cookie_tile_stairs": "Oreoziegeltreppe",
+  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Vertikale Oreoziegelstufe"
+}
