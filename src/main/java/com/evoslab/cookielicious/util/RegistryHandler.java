@@ -28,7 +28,7 @@ public class RegistryHandler {
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
     // Items
-    public static final RegistryObject<Item> STRAWBERRY_COOKIE           = ITEMS.register("strawberry_cookie", () -> new HealingItem(2F, new Item.Properties().food(Foods.STRAWBERRY_COOKIE).group(ItemGroup.FOOD)));
+    public static final RegistryObject<Item> STRAWBERRY_COOKIE           = ITEMS.register("strawberry_cookie", () -> new HealingItem(1F, new Item.Properties().food(Foods.STRAWBERRY_COOKIE).group(ItemGroup.FOOD)));
     public static final RegistryObject<VanillaCookie> VANILLA_COOKIE = ITEMS.register("vanilla_cookie", VanillaCookie::new);
     public static final RegistryObject<SandwichCookie> SANDWICH_COOKIE = ITEMS.register("sandwich_cookie", SandwichCookie::new);
     // Blocks
