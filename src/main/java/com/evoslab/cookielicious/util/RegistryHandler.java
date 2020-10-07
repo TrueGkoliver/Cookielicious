@@ -41,6 +41,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_SLAB = BLOCKS.register("chocolate_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(CHOCOLATE_COOKIE_TILES.get())));
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_STAIRS = BLOCKS.register("chocolate_cookie_tile_stairs", () -> new StairsBlock(CHOCOLATE_COOKIE_TILES.get().getDefaultState(), Block.Properties.from(CHOCOLATE_COOKIE_TILES.get())));
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_VERTICAL_SLAB = BLOCKS.register("chocolate_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(AbstractBlock.Properties.from(CHOCOLATE_COOKIE_TILES.get())));
+    public static final RegistryObject<Block> CHOCOLATE_COOKIE_CRATE = BLOCKS.register("chocolate_cookie_crate", ChocolateCookieTiles::new);
 
     public static final RegistryObject<Block> VANILLA_COOKIE_TILES = BLOCKS.register("vanilla_cookie_tiles", VanillaCookieTiles::new);
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_SLAB = BLOCKS.register("vanilla_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(VANILLA_COOKIE_TILES.get())));
@@ -85,6 +86,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> CHOCOLATE_COOKIE_TILE_SLAB_ITEM = ITEMS.register("chocolate_cookie_tile_slab", () -> new BlockItemBase(CHOCOLATE_COOKIE_TILE_SLAB.get()));
     public static final RegistryObject<Item> CHOCOLATE_COOKIE_TILE_STAIRS_ITEM = ITEMS.register("chocolate_cookie_tile_stairs", () -> new BlockItemBase(CHOCOLATE_COOKIE_TILE_STAIRS.get()));
     public static final RegistryObject<Item> CHOCOLATE_COOKIE_TILE_VERTICAL_SLAB_ITEM = ITEMS.register("chocolate_cookie_tile_vertical_slab", () -> new BlockItemBase(CHOCOLATE_COOKIE_TILE_VERTICAL_SLAB.get()));
+    public static final RegistryObject<Item> CHOCOLATE_COOKIE_CRATE_ITEM = ITEMS.register("chocolate_cookie_crate", () -> new BlockItemBase(CHOCOLATE_COOKIE_CRATE.get()));
 
     public static final RegistryObject<Item> HONEY_COOKIE_TILES_ITEM = ITEMS.register("honey_cookie_tiles", () -> new BlockItemBase(HONEY_COOKIE_TILES.get()));
     public static final RegistryObject<Item> HONEY_COOKIE_TILE_SLAB_ITEM = ITEMS.register("honey_cookie_tile_slab", () -> new BlockItemBase(HONEY_COOKIE_TILE_SLAB.get()));
