@@ -36,6 +36,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_SLAB = BLOCKS.register("strawberry_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(STRAWBERRY_COOKIE_TILES.get())));
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_STAIRS = BLOCKS.register("strawberry_cookie_tile_stairs", () -> new StairsBlock(STRAWBERRY_COOKIE_TILES.get().getDefaultState(), Block.Properties.from(STRAWBERRY_COOKIE_TILES.get())));
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_VERTICAL_SLAB = BLOCKS.register("strawberry_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(AbstractBlock.Properties.from(STRAWBERRY_COOKIE_TILES.get())));
+    public static final RegistryObject<Block> STRAWBERRY_COOKIE_CRATE = BLOCKS.register("strawberry_cookie_crate", StrawberryCookieTiles::new);
 
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILES = BLOCKS.register("chocolate_cookie_tiles", ChocolateCookieTiles::new);
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_SLAB = BLOCKS.register("chocolate_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(CHOCOLATE_COOKIE_TILES.get())));
@@ -47,11 +48,14 @@ public class RegistryHandler {
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_SLAB = BLOCKS.register("vanilla_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(VANILLA_COOKIE_TILES.get())));
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_STAIRS = BLOCKS.register("vanilla_cookie_tile_stairs", () -> new StairsBlock(VANILLA_COOKIE_TILES.get().getDefaultState(), Block.Properties.from(VANILLA_COOKIE_TILES.get())));
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_VERTICAL_SLAB = BLOCKS.register("vanilla_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(AbstractBlock.Properties.from(VANILLA_COOKIE_TILES.get())));
+    public static final RegistryObject<Block> VANILLA_COOKIE_CRATE = BLOCKS.register("vanilla_cookie_crate", ChocolateCookieTiles::new);
 
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILES = BLOCKS.register("sandwich_cookie_tiles", SandwichCookieTiles::new);
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_SLAB = BLOCKS.register("sandwich_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(SANDWICH_COOKIE_TILES.get())));
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_STAIRS = BLOCKS.register("sandwich_cookie_tile_stairs", () -> new StairsBlock(SANDWICH_COOKIE_TILES.get().getDefaultState(), Block.Properties.from(SANDWICH_COOKIE_TILES.get())));
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_VERTICAL_SLAB = BLOCKS.register("sandwich_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(AbstractBlock.Properties.from(SANDWICH_COOKIE_TILES.get())));
+    public static final RegistryObject<Block> SANDWICH_COOKIE_CRATE = BLOCKS.register("sandwich_cookie_crate", ChocolateCookieTiles::new);
+
 
     public static final RegistryObject<Block> HONEY_COOKIE_TILES = BLOCKS.register("honey_cookie_tiles", StrawberryCookieTiles::new);
     public static final RegistryObject<Block> HONEY_COOKIE_TILE_SLAB = BLOCKS.register("honey_cookie_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.from(STRAWBERRY_COOKIE_TILES.get())));
@@ -68,18 +72,19 @@ public class RegistryHandler {
     public static final RegistryObject<Item> STRAWBERRY_COOKIE_TILE_SLAB_ITEM = ITEMS.register("strawberry_cookie_tile_slab", () -> new BlockItemBase(STRAWBERRY_COOKIE_TILE_SLAB.get()));
     public static final RegistryObject<Item> STRAWBERRY_COOKIE_TILE_STAIRS_ITEM = ITEMS.register("strawberry_cookie_tile_stairs", () -> new BlockItemBase(STRAWBERRY_COOKIE_TILE_STAIRS.get()));
     public static final RegistryObject<Item> STRAWBERRY_COOKIE_TILE_VERTICAL_SLAB_ITEM = ITEMS.register("strawberry_cookie_tile_vertical_slab", () -> new BlockItemBase(STRAWBERRY_COOKIE_TILE_VERTICAL_SLAB.get()));
-
+    public static final RegistryObject<Item> STRAWBERRY_COOKIE_CRATE_ITEM = ITEMS.register("strawberry_cookie_crate", () -> new BlockItemBase(STRAWBERRY_COOKIE_CRATE.get()));
 
     public static final RegistryObject<Item> VANILLA_COOKIE_TILES_ITEM = ITEMS.register("vanilla_cookie_tiles", () -> new BlockItemBase(VANILLA_COOKIE_TILES.get()));
     public static final RegistryObject<Item> VANILLA_COOKIE_TILE_SLAB_ITEM = ITEMS.register("vanilla_cookie_tile_slab", () -> new BlockItemBase(VANILLA_COOKIE_TILE_SLAB.get()));
     public static final RegistryObject<Item> VANILLA_COOKIE_TILE_STAIRS_ITEM = ITEMS.register("vanilla_cookie_tile_stairs", () -> new BlockItemBase(VANILLA_COOKIE_TILE_STAIRS.get()));
     public static final RegistryObject<Item> VANILLA_COOKIE_TILE_VERTICAL_SLAB_ITEM = ITEMS.register("vanilla_cookie_tile_vertical_slab", () -> new BlockItemBase(VANILLA_COOKIE_TILE_VERTICAL_SLAB.get()));
-
+    public static final RegistryObject<Item> VANILLA_COOKIE_CRATE_ITEM = ITEMS.register("vanilla_cookie_crate", () -> new BlockItemBase(VANILLA_COOKIE_CRATE.get()));
 
     public static final RegistryObject<Item> SANDWICH_COOKIE_TILES_ITEM = ITEMS.register("sandwich_cookie_tiles", () -> new BlockItemBase(SANDWICH_COOKIE_TILES.get()));
     public static final RegistryObject<Item> SANDWICH_COOKIE_TILE_SLAB_ITEM = ITEMS.register("sandwich_cookie_tile_slab", () -> new BlockItemBase(SANDWICH_COOKIE_TILE_SLAB.get()));
     public static final RegistryObject<Item> SANDWICH_COOKIE_TILE_STAIRS_ITEM = ITEMS.register("sandwich_cookie_tile_stairs", () -> new BlockItemBase(SANDWICH_COOKIE_TILE_STAIRS.get()));
     public static final RegistryObject<Item> SANDWICH_COOKIE_TILE_VERTICAL_SLAB_ITEM = ITEMS.register("sandwich_cookie_tile_vertical_slab", () -> new BlockItemBase(SANDWICH_COOKIE_TILE_VERTICAL_SLAB.get()));
+    public static final RegistryObject<Item> SANDWICH_COOKIE_CRATE_ITEM = ITEMS.register("sandwich_cookie_crate", () -> new BlockItemBase(SANDWICH_COOKIE_CRATE.get()));
 
 
     public static final RegistryObject<Item> CHOCOLATE_COOKIE_TILES_ITEM = ITEMS.register("chocolate_cookie_tiles", () -> new BlockItemBase(CHOCOLATE_COOKIE_TILES.get()));
