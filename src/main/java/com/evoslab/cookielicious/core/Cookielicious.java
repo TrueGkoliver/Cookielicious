@@ -3,7 +3,7 @@ package com.evoslab.cookielicious.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
+import com.evoslab.cookielicious.core.registry.util.CookieliciousRegistryHelper;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,7 +18,7 @@ public class Cookielicious {
 
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "cookielicious";
-    public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
+    public static final CookieliciousRegistryHelper REGISTRY_HELPER = new CookieliciousRegistryHelper(MOD_ID);
     public static Cookielicious instance;
     
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
