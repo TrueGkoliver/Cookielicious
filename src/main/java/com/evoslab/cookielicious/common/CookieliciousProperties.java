@@ -28,4 +28,7 @@ public final class CookieliciousProperties {
             .sound(SoundType.WOOD)
             .harvestTool(ToolType.AXE);
 	
+	public static final Block.Properties HONEY = STRAWBERRY;
+	public static final Block.Properties SWEET_BERRY = STRAWBERRY;
+	
 }
