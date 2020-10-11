@@ -1,4 +1,4 @@
-package com.evoslab.cookielicious.blocks;
+package com.evoslab.cookielicious.common.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

@@ -1,4 +1,4 @@
-package com.evoslab.cookielicious.items;
+package com.evoslab.cookielicious.common.items;
 
 import com.minecraftabnormals.neapolitan.core.registry.NeapolitanEffects;
 import net.minecraft.item.Food;
