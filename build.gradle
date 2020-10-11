@@ -82,6 +82,7 @@ dependencies {
     implementation fg.deobf("curse.maven:appleskin:2997288")
 	
 	implementation fg.deobf("curse.maven:farmersdelight:3067068")
+	implementation fg.deobf("curse.maven:quark:3072823")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
