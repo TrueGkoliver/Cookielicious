@@ -8,27 +8,9 @@ import net.minecraftforge.common.ToolType;
 
 public final class CookieliciousBlockProperties {
 	
-	public static final Block.Properties CHOCOLATE = Block.Properties.create(Material.WOOD)
+	public static final Block.Properties COOKIE = Block.Properties.create(Material.WOOD)
 			.hardnessAndResistance(1.0f, 1.0f)
             .sound(SoundType.WOOD)
             .harvestTool(ToolType.AXE);
-	
-	public static final Block.Properties SANDWICH = Properties.create(Material.WOOD)
-            .hardnessAndResistance(1.0f, 1.0f)
-            .sound(SoundType.WOOD)
-            .harvestTool(ToolType.AXE);
-	
-	public static final Block.Properties STRAWBERRY = Properties.create(Material.WOOD)
-            .hardnessAndResistance(1.0f, 1.0f)
-            .sound(SoundType.WOOD)
-            .harvestTool(ToolType.AXE);
-	
-	public static final Block.Properties VANILLA = Properties.create(Material.WOOD)
-            .hardnessAndResistance(1.0f, 1.0f)
-            .sound(SoundType.WOOD)
-            .harvestTool(ToolType.AXE);
-	
-	public static final Block.Properties HONEY = STRAWBERRY;
-	public static final Block.Properties SWEET_BERRY = STRAWBERRY;
 	
 }
