@@ -36,7 +36,7 @@ minecraft {
 			jvmArg "-Dmixin.env.disableRefMap=true"
 
             mods {
-                examplemod {
+                cookielicious {
                     source sourceSets.main
                 }
             }
@@ -50,7 +50,7 @@ minecraft {
 			jvmArg "-Dmixin.env.disableRefMap=true"
 
             mods {
-                examplemod {
+                cookielicious {
                     source sourceSets.main
                 }
             }
