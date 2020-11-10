@@ -1,0 +1,40 @@
+{
+  "item.minecraft.cookie": "Печенье с шоколадной крошкой",
+  "item.cookielicious.strawberry_cookie": "Клубничное печенье",
+  "item.cookielicious.vanilla_cookie": "Ванильное печенье",
+  "item.cookielicious.sandwich_cookie": "Oreo",
+  
+  "block.cookielicious.strawberry_cookie_tiles": "Плитка из клубничного печенья",
+  "block.cookielicious.strawberry_cookie_tile_slab": "Плита из плитки из клубничного печенья",
+  "block.cookielicious.strawberry_cookie_tile_stairs": "Ступеньки из плитки из клубничного печенья",
+  "block.cookielicious.strawberry_cookie_tile_vertical_slab": "Вертикальная плита из плитки из клубничного печенья",
+  "block.cookielicious.strawberry_cookie_crate": "Ящик клубничного печенья",
+  
+  "block.cookielicious.chocolate_cookie_tiles": "Плитка из печенья с шоколадной крошкой",
+  "block.cookielicious.chocolate_cookie_tile_slab": "Плита из плитки из печенья с шоколадной крошкой",
+  "block.cookielicious.chocolate_cookie_tile_stairs": "Ступеньки из плитки из печенья с шоколадной крошкой",
+  "block.cookielicious.chocolate_cookie_tile_vertical_slab": "Вертикальная плита из плитки из печенья с шоколадной крошкой",
+  "block.cookielicious.chocolate_cookie_crate": "Ящик печенья с шоколадной крошкой",
+  
+  "block.cookielicious.vanilla_cookie_tiles": "Плитка из ванильного печенья",
+  "block.cookielicious.vanilla_cookie_tile_slab": "Плита из плитки из ванильного печенья",
+  "block.cookielicious.vanilla_cookie_tile_stairs": "Ступеньки из плитки из ванильного печенья",
+  "block.cookielicious.vanilla_cookie_tile_vertical_slab": "Вертикальная плита из плитки из ванильного печенья",
+  "block.cookielicious.vanilla_cookie_crate": "Ящик ванильного печенья",
+  
+  "block.cookielicious.sandwich_cookie_tiles": "Плитка из Oreo",
+  "block.cookielicious.sandwich_cookie_tile_slab": "Плита из плитки из Oreo",
+  "block.cookielicious.sandwich_cookie_tile_stairs": "Ступеньки из плитки из Oreo",
+  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Вертикальная плита из плитки из Oreo",
+  "block.cookielicious.sandwich_cookie_crate": "Ящик Oreo",
+  
+  "block.cookielicious.honey_cookie_tiles": "Плитка из медового печенья",
+  "block.cookielicious.honey_cookie_tile_slab": "Плита из плитки из медового печенья",
+  "block.cookielicious.honey_cookie_tile_stairs": "Ступеньки из плитки из медового печенья",
+  "block.cookielicious.honey_cookie_tile_vertical_slab": "Вертикальная плита из плитки из медового печенья",
+  
+  "block.cookielicious.sweet_berry_cookie_tiles": "Плитка из сладко-ягодного печенья",
+  "block.cookielicious.sweet_berry_cookie_tile_slab": "Плита из плитки из сладко-ягодного печенья",
+  "block.cookielicious.sweet_berry_cookie_tile_stairs": "Ступеньки из плитки из сладко-ягодного печенья",
+  "block.cookielicious.sweet_berry_cookie_tile_vertical_slab": "Вертикальная плита из плитки из сладко-ягодного печенья"
+}
