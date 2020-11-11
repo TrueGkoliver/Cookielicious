@@ -1,4 +1,4 @@
-package com.evoslab.cookielicious.core.compat;
+package com.evoslab.cookielicious.core.other;
 
 public class CookieliciousMods {
 	public static final String QUARK = "quark";

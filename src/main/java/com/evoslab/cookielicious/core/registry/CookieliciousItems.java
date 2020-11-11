@@ -1,7 +1,7 @@
 package com.evoslab.cookielicious.core.registry;
 
-import com.evoslab.cookielicious.common.properties.CookieliciousItemProperties;
 import com.evoslab.cookielicious.core.Cookielicious;
+import com.evoslab.cookielicious.core.other.CookieliciousProperties;
 import com.evoslab.cookielicious.core.registry.util.CookieliciousRegistryHelper;
 import com.minecraftabnormals.neapolitan.common.item.HealingItem;
 
@@ -15,8 +15,8 @@ public class CookieliciousItems {
 	
 	public static final CookieliciousRegistryHelper HELPER = Cookielicious.REGISTRY_HELPER;
 	
-    public static final RegistryObject<Item> STRAWBERRY_COOKIE = HELPER.createItem("strawberry_cookie", () -> new HealingItem(1F, CookieliciousItemProperties.STRAWBERRY));
-    public static final RegistryObject<Item> VANILLA_COOKIE = HELPER.createItem("vanilla_cookie", () -> new Item(CookieliciousItemProperties.VANILLA));
-    public static final RegistryObject<Item> SANDWICH_COOKIE = HELPER.createItem("sandwich_cookie", () -> new Item(CookieliciousItemProperties.SANDWICH));
+    public static final RegistryObject<Item> STRAWBERRY_COOKIE = HELPER.createItem("strawberry_cookie", () -> new HealingItem(1F, CookieliciousProperties.STRAWBERRY));
+    public static final RegistryObject<Item> VANILLA_COOKIE = HELPER.createItem("vanilla_cookie", () -> new Item(CookieliciousProperties.VANILLA));
+    public static final RegistryObject<Item> SANDWICH_COOKIE = HELPER.createItem("sandwich_cookie", () -> new Item(CookieliciousProperties.SANDWICH));
 
 }
