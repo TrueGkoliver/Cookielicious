@@ -2,7 +2,7 @@
   "item.minecraft.cookie": "Schokoladenkeks",
   "item.cookielicious.strawberry_cookie": "Erdbeerkeks",
   "item.cookielicious.vanilla_cookie": "Vanillekeks",
-  "item.cookielicious.sandwich_cookie": "Oreo",
+  "item.cookielicious.sandwich_cookie": "Oreokeks",
   
   "block.cookielicious.strawberry_cookie_tiles": "Erdbeerkeksfliesen",
   "block.cookielicious.strawberry_cookie_tile_slab": "Erdbeerkeksfliesenstufe",
@@ -22,11 +22,11 @@
   "block.cookielicious.vanilla_cookie_tile_vertical_slab": "Vertikale Vanillekeksfliesenstufe",
   "block.cookielicious.vanilla_cookie_crate": "Vanillekekskiste",
   
-  "block.cookielicious.sandwich_cookie_tiles": "Oreo-Fliesen",
-  "block.cookielicious.sandwich_cookie_tile_slab": "Oreo-Fliesenstufe",
-  "block.cookielicious.sandwich_cookie_tile_stairs": "Oreo-Fliesentreppe",
-  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Vertikale Oreo-Fliesenstufe",
-  "block.cookielicious.sandwich_cookie_crate": "Oreo-Kiste",
+  "block.cookielicious.sandwich_cookie_tiles": "Oreokeksfliesen",
+  "block.cookielicious.sandwich_cookie_tile_slab": "Oreokeksfliesenstufe",
+  "block.cookielicious.sandwich_cookie_tile_stairs": "Oreokeksfliesentreppe",
+  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Vertikale Oreokeksfliesenstufe",
+  "block.cookielicious.sandwich_cookie_crate": "Oreokekskiste",
   
   "block.cookielicious.honey_cookie_tiles": "Honigkeksfliesen",
   "block.cookielicious.honey_cookie_tile_slab": "Honigkeksfliesenstufe",
