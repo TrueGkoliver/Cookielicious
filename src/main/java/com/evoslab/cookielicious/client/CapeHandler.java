@@ -26,8 +26,7 @@ public final class CapeHandler {
     private static final ImmutableSet<String> UUIDS = ImmutableSet.of(
             "519ea930-dac0-468f-ab06-3b530b7a3304", // Epic312
             "631b7d0b-23c5-4341-bcc1-87fc02f8840a", // Evoli_934 (Evo)
-            "dbf0d6e0-c3c4-4818-918f-62b7e08f2e59", // AvocadoGA66 (AvocadoSpud)
-            "b16f336c-ddae-4e81-8aa4-89fc87bb8292"  // narywastaken (Nary)
+            "dbf0d6e0-c3c4-4818-918f-62b7e08f2e59"  // AvocadoGA66 (AvocadoSpud)
     );
 
     private static final Set<String> RENDERED = Sets.newHashSet();
