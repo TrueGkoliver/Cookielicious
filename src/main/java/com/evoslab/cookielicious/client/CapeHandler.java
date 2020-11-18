@@ -27,9 +27,7 @@ public final class CapeHandler {
             "519ea930-dac0-468f-ab06-3b530b7a3304", // Epic312
             "631b7d0b-23c5-4341-bcc1-87fc02f8840a", // Evoli_934 (Evo)
             "dbf0d6e0-c3c4-4818-918f-62b7e08f2e59", // AvocadoGA66 (AvocadoSpud)
-            "b16f336c-ddae-4e81-8aa4-89fc87bb8292", // narywastaken (Nary)
-            "4b704123-869a-4a15-972c-84cb8820f733", // stardust9999 (Stardust)
-            "a217dbc6-f6b0-4c8a-a450-e1f87b61c83e"  // EltrutLikes
+            "b16f336c-ddae-4e81-8aa4-89fc87bb8292"  // narywastaken (Nary)
     );
 
     private static final Set<String> RENDERED = Sets.newHashSet();
