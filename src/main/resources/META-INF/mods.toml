@@ -10,8 +10,8 @@ displayName="Cookielicious"
 updateJSONURL="http://myurl.me/"
 displayURL="http://example.com/"
 logoFile="cookielicious.png"
-credits="Thanks to Team Abnormals for making Neapolitan"
-authors="Evo, Stardust, AvocadoSpud, Nary, EltrutLikes"
+credits="Evo, Stardust, AvocadoSpud, Nary, EltrutLikes, and thanks to Team Abnormals for making Neapolitan"
+authors="Evo's Lab"
 description='''
 Cookielicious is an addon for Neapolitan that adds more cookie themed items.
 '''
