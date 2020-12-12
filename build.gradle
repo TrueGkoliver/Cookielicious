@@ -74,16 +74,15 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.108'
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:neapolitan:3065225")
-    implementation fg.deobf("curse.maven:autoreglib:3017289")
-
-    implementation fg.deobf("curse.maven:abnormals-core:3072976")
-    implementation fg.deobf("curse.maven:appleskin:2997288")
+    implementation fg.deobf("curse.maven:abnormals-core-382216:${ac_id}")
+    implementation fg.deobf("curse.maven:neapolitan-382016:${neapolitan_id}")
+    implementation fg.deobf("curse.maven:appleskin-248787:${appleskin_id}")
 	
-	implementation fg.deobf("curse.maven:farmersdelight:3067068")
-	implementation fg.deobf("curse.maven:quark:3072823")
+	//implementation fg.deobf("curse.maven:farmersdelight:3067068")
+	//implementation fg.deobf("curse.maven:autoreglib:3017289")
+	//implementation fg.deobf("curse.maven:quark:3072823")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
