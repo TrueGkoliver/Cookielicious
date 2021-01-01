@@ -8,10 +8,9 @@ import com.minecraftabnormals.abnormals_core.core.util.TradeUtil.AbnormalsTrade;
 import net.minecraft.entity.merchant.villager.VillagerProfession;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@Mod.EventBusSubscriber(modid = Cookielicious.MOD_ID, bus = Bus.MOD)
+@EventBusSubscriber(modid = Cookielicious.MOD_ID)
 public class CookieliciousEvents {
 	
 	@SubscribeEvent
