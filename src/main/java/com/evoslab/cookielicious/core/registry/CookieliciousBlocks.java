@@ -2,9 +2,9 @@ package com.evoslab.cookielicious.core.registry;
 
 import com.evoslab.cookielicious.core.Cookielicious;
 import com.evoslab.cookielicious.core.other.CookieliciousMods;
-import com.evoslab.cookielicious.core.registry.util.CookieliciousRegistryHelper;
-import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
-import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
+import com.minecraftabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
+import com.minecraftabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
+import com.minecraftabnormals.abnormals_core.core.util.registry.BlockSubRegistryHelper;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @Mod.EventBusSubscriber(modid = Cookielicious.MOD_ID, bus = Bus.MOD)
 public class CookieliciousBlocks {
 	
-	public static final CookieliciousRegistryHelper HELPER = Cookielicious.REGISTRY_HELPER;
+	public static final BlockSubRegistryHelper HELPER = Cookielicious.REGISTRY_HELPER.getBlockSubHelper();
 
     // Strawberry
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILES = HELPER.createBlock("strawberry_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
@@ -53,13 +53,13 @@ public class CookieliciousBlocks {
     public static final RegistryObject<Block> HONEY_COOKIE_TILES = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "honey_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> HONEY_COOKIE_TILE_SLAB = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "honey_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> HONEY_COOKIE_TILE_STAIRS = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "honey_cookie_tile_stairs", () -> new AbnormalsStairsBlock(STRAWBERRY_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> HONEY_COOKIE_TILE_VERTICAL_SLAB = HELPER.createTwoCompatBlock(CookieliciousMods.FARMERS_DELIGHT, CookieliciousMods.QUARK, "honey_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> HONEY_COOKIE_TILE_VERTICAL_SLAB = HELPER.createCompatBlock("honey_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS, CookieliciousMods.FARMERS_DELIGHT, CookieliciousMods.QUARK);
 
     // Sweet Berry
     public static final RegistryObject<Block> SWEET_BERRY_COOKIE_TILES = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "sweet_berry_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SWEET_BERRY_COOKIE_TILE_SLAB = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "sweet_berry_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SWEET_BERRY_COOKIE_TILE_STAIRS = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "sweet_berry_cookie_tile_stairs", () -> new AbnormalsStairsBlock(STRAWBERRY_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> SWEET_BERRY_TILE_VERTICAL_SLAB = HELPER.createTwoCompatBlock(CookieliciousMods.FARMERS_DELIGHT, CookieliciousMods.QUARK, "sweet_berry_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> SWEET_BERRY_TILE_VERTICAL_SLAB = HELPER.createCompatBlock("sweet_berry_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS, CookieliciousMods.FARMERS_DELIGHT, CookieliciousMods.QUARK);
     
     public static class Properties {
     	public static final Block.Properties COOKIE = Block.Properties.create(Material.WOOD)

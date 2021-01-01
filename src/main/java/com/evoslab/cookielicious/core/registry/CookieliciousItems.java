@@ -1,7 +1,7 @@
 package com.evoslab.cookielicious.core.registry;
 
 import com.evoslab.cookielicious.core.Cookielicious;
-import com.evoslab.cookielicious.core.registry.util.CookieliciousRegistryHelper;
+import com.minecraftabnormals.abnormals_core.core.util.registry.ItemSubRegistryHelper;
 import com.minecraftabnormals.neapolitan.common.item.HealingItem;
 import com.minecraftabnormals.neapolitan.core.registry.NeapolitanEffects;
 
@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @Mod.EventBusSubscriber(modid = Cookielicious.MOD_ID, bus = Bus.MOD)
 public class CookieliciousItems {
 	
-	public static final CookieliciousRegistryHelper HELPER = Cookielicious.REGISTRY_HELPER;
+	public static final ItemSubRegistryHelper HELPER = Cookielicious.REGISTRY_HELPER.getItemSubHelper();
 	
     public static final RegistryObject<Item> STRAWBERRY_COOKIE = HELPER.createItem("strawberry_cookie", () -> new HealingItem(1F, Properties.STRAWBERRY));
     public static final RegistryObject<Item> VANILLA_COOKIE = HELPER.createItem("vanilla_cookie", () -> new Item(Properties.VANILLA));

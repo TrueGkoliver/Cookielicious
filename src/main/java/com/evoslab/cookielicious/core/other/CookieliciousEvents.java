@@ -1,0 +1,25 @@
+package com.evoslab.cookielicious.core.other;
+
+import com.evoslab.cookielicious.core.Cookielicious;
+import com.evoslab.cookielicious.core.registry.CookieliciousItems;
+import com.minecraftabnormals.abnormals_core.core.util.TradeUtil;
+import com.minecraftabnormals.abnormals_core.core.util.TradeUtil.AbnormalsTrade;
+
+import net.minecraft.entity.merchant.villager.VillagerProfession;
+import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+
+@Mod.EventBusSubscriber(modid = Cookielicious.MOD_ID, bus = Bus.MOD)
+public class CookieliciousEvents {
+	
+	@SubscribeEvent
+	public static void onVillagerTrades(VillagerTradesEvent event) {
+		TradeUtil.addVillagerTrades(event, VillagerProfession.FARMER, TradeUtil.JOURNEYMAN,
+				new AbnormalsTrade(3, CookieliciousItems.SANDWICH_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.STRAWBERRY_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.VANILLA_COOKIE.get(), 18, 12, 10));
+	}
+	
+}
