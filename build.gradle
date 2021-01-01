@@ -9,23 +9,19 @@ buildscript {
     }
 }
 
-plugins {
-    id "com.wynprice.cursemaven" version "2.1.1"
-}
-
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "${mc_version}-${mod_version}"
-group = 'com.evoslab.cookielicious' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'com.evoslab.cookielicious'
 archivesBaseName = 'cookielicious'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'snapshot', version: '20200723-1.16.1'
+    mappings channel: "${project.mappingsChannel}", version: "${project.mappings}"
 
     runs {
         client {
@@ -80,9 +76,15 @@ dependencies {
     implementation fg.deobf("curse.maven:neapolitan-382016:${neapolitan_id}")
     implementation fg.deobf("curse.maven:appleskin-248787:${appleskin_id}")
 	
-	//implementation fg.deobf("curse.maven:farmersdelight:3067068")
-	//implementation fg.deobf("curse.maven:autoreglib:3017289")
-	//implementation fg.deobf("curse.maven:quark:3072823")
+	implementation fg.deobf("curse.maven:farmersdelight-398521:${fd_id}")
+	implementation fg.deobf("curse.maven:autoreglib-250363:${arl_id}")
+	implementation fg.deobf("curse.maven:quark-243121:${quark_id}")
+}
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+    }
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
