@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "farmersdelight:sweet_berry_cookie"
+            "item": "cookielicious:strawberry_cookie"
         }
     },
     "result": {
-        "item": "cookielicious:sweet_berry_cookie_tiles",
+        "item": "cookielicious:strawberry_cookie_tiles",
         "count": 4
     }
 }
