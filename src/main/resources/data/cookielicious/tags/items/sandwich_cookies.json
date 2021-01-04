@@ -2,5 +2,8 @@
 	"replace": "false",
 	"values": [
 		"cookielicious:sandwich_cookie"
+	],
+	"optional": [
+		"resourcefulbees:oreo_cookie"
 	]
 }
