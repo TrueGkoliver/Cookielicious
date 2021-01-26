@@ -8,7 +8,9 @@ import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -24,6 +26,8 @@ public class Cookielicious {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     public Cookielicious() {
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CookieliciousConfig.COMMON_SPEC);
+    	
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
         instance = this;
