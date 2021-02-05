@@ -26,28 +26,28 @@ public class CookieliciousBlocks {
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_SLAB = HELPER.createBlock("strawberry_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_STAIRS = HELPER.createBlock("strawberry_cookie_tile_stairs", () -> new AbnormalsStairsBlock(STRAWBERRY_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> STRAWBERRY_COOKIE_TILE_VERTICAL_SLAB = HELPER.createCompatBlock(CookieliciousMods.QUARK, "strawberry_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> STRAWBERRY_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "strawberry_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STRAWBERRY_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "strawberry_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.DECORATIONS);
 
     // Chocolate
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILES = HELPER.createBlock("chocolate_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_SLAB = HELPER.createBlock("chocolate_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_STAIRS = HELPER.createBlock("chocolate_cookie_tile_stairs", () -> new AbnormalsStairsBlock(CHOCOLATE_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> CHOCOLATE_COOKIE_TILE_VERTICAL_SLAB = HELPER.createCompatBlock(CookieliciousMods.QUARK, "chocolate_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> CHOCOLATE_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "chocolate_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> CHOCOLATE_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "chocolate_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.DECORATIONS);
 
     // Vanilla
     public static final RegistryObject<Block> VANILLA_COOKIE_TILES = HELPER.createBlock("vanilla_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_SLAB = HELPER.createBlock("vanilla_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_STAIRS = HELPER.createBlock("vanilla_cookie_tile_stairs", () -> new AbnormalsStairsBlock(VANILLA_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> VANILLA_COOKIE_TILE_VERTICAL_SLAB = HELPER.createCompatBlock(CookieliciousMods.QUARK, "vanilla_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> VANILLA_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "vanilla_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> VANILLA_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "vanilla_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.DECORATIONS);
 
     // Sandwich
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILES = HELPER.createBlock("sandwich_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_SLAB = HELPER.createBlock("sandwich_cookie_tile_slab", () -> new SlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_STAIRS = HELPER.createBlock("sandwich_cookie_tile_stairs", () -> new AbnormalsStairsBlock(SANDWICH_COOKIE_TILES.get().getDefaultState(), Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SANDWICH_COOKIE_TILE_VERTICAL_SLAB = HELPER.createCompatBlock(CookieliciousMods.QUARK, "sandwich_cookie_tile_vertical_slab", () -> new VerticalSlabBlock(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> SANDWICH_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "sandwich_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> SANDWICH_COOKIE_CRATE = HELPER.createCompatBlock(CookieliciousMods.QUARK, "sandwich_cookie_crate", () -> new Block(Properties.COOKIE), ItemGroup.DECORATIONS);
 
     // Honey
     public static final RegistryObject<Block> HONEY_COOKIE_TILES = HELPER.createCompatBlock(CookieliciousMods.FARMERS_DELIGHT, "honey_cookie_tiles", () -> new Block(Properties.COOKIE), ItemGroup.BUILDING_BLOCKS);
