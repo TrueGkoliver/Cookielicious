@@ -1,11 +1,12 @@
 package com.evoslab.cookielicious.core;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.evoslab.cookielicious.core.other.CookieliciousCompat;
-import com.evoslab.cookielicious.core.other.conditions.CookieliciousCondition;
-import com.evoslab.cookielicious.core.other.conditions.CookieliciousMap;
+import com.evoslab.cookielicious.core.other.recipe.CookieliciousRecipeCondition;
+import com.evoslab.cookielicious.core.other.recipe.CookieliciousMap;
 import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -31,7 +32,7 @@ public class Cookielicious {
     public Cookielicious() {
     	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CookieliciousConfig.COMMON_SPEC);
     	
-    	CraftingHelper.register(new CookieliciousCondition.Serializer(new CookieliciousMap(), "condition"));
+    	CraftingHelper.register(new CookieliciousRecipeCondition.Serializer(new CookieliciousMap(), "condition"));
     	
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);

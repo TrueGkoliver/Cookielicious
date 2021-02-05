@@ -13,5 +13,11 @@
     "result": {
         "item": "cookielicious:chocolate_cookie_tile_stairs",
         "count": 4
+    },
+	"conditions": [
+    {
+      "type": "cookielicious:condition",
+      "condition": "chocolate_cookie_tiles"
     }
+  ]
 }

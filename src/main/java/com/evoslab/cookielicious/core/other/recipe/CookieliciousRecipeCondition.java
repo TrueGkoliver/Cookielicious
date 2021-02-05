@@ -1,4 +1,4 @@
-package com.evoslab.cookielicious.core.other.conditions;
+package com.evoslab.cookielicious.core.other.recipe;
 
 import com.evoslab.cookielicious.core.Cookielicious;
 import com.google.gson.JsonObject;
@@ -7,12 +7,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 
-public class CookieliciousCondition implements ICondition {
+public class CookieliciousRecipeCondition implements ICondition {
 	private final CookieliciousMap map;
 	private final ResourceLocation location;
 	private final String condition;
 	
-	public CookieliciousCondition(CookieliciousMap map, ResourceLocation location, String condition) {
+	public CookieliciousRecipeCondition(CookieliciousMap map, ResourceLocation location, String condition) {
 		this.map = map;
 		this.location = location;
 		this.condition = condition;
@@ -28,7 +28,7 @@ public class CookieliciousCondition implements ICondition {
 		return map.getValue(condition);
 	}
 	
-	public static class Serializer implements IConditionSerializer<CookieliciousCondition> {
+	public static class Serializer implements IConditionSerializer<CookieliciousRecipeCondition> {
 		private final CookieliciousMap map;
 		private final ResourceLocation location;
 		
@@ -38,13 +38,13 @@ public class CookieliciousCondition implements ICondition {
 		}
 		
 		@Override
-		public void write(JsonObject json, CookieliciousCondition value) {
+		public void write(JsonObject json, CookieliciousRecipeCondition value) {
 			json.addProperty("condition", value.condition);
 		}
 
 		@Override
-		public CookieliciousCondition read(JsonObject json) {
-			return new CookieliciousCondition(this.map, this.location, json.getAsJsonPrimitive("condition").getAsString());
+		public CookieliciousRecipeCondition read(JsonObject json) {
+			return new CookieliciousRecipeCondition(this.map, this.location, json.getAsJsonPrimitive("condition").getAsString());
 		}
 
 		@Override

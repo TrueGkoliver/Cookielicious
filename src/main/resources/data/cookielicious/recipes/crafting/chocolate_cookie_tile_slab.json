@@ -12,5 +12,11 @@
     "result": {
         "item": "cookielicious:chocolate_cookie_tile_slab",
         "count": 6
+    },
+	"conditions": [
+    {
+      "type": "cookielicious:condition",
+      "condition": "chocolate_cookie_tiles"
     }
+  ]
 }

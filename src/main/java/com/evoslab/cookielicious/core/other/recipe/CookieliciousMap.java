@@ -1,4 +1,4 @@
-package com.evoslab.cookielicious.core.other.conditions;
+package com.evoslab.cookielicious.core.other.recipe;
 
 import java.util.HashMap;
 import java.util.Map;
