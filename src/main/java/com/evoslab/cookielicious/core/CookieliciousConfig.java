@@ -2,6 +2,8 @@ package com.evoslab.cookielicious.core;
 
 import org.apache.commons.lang3.tuple.Pair;
 
+import com.evoslab.cookielicious.core.other.recipe.CookieliciousRecipeCondition;
+
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class CookieliciousConfig {
@@ -23,6 +25,12 @@ public class CookieliciousConfig {
 			enableChocolateCookieTiles = builder.define("Whether chocolate cookie tiles are enabled", true);
 			
 			builder.pop();
+			
+			CookieliciousRecipeCondition.TABLE.put("vanilla_cookies", enableVanillaCookies);
+			CookieliciousRecipeCondition.TABLE.put("strawberry_cookies", enableStrawberryCookies);
+			CookieliciousRecipeCondition.TABLE.put("vanilla_cookie_tiles", enableVanillaCookieTiles);
+			CookieliciousRecipeCondition.TABLE.put("strawberry_cookie_tiles", enableStrawberryCookieTiles);
+			CookieliciousRecipeCondition.TABLE.put("chocolate_cookie_tiles", enableChocolateCookieTiles);
 		}
 		
 	}
