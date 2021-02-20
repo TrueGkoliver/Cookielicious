@@ -6,20 +6,22 @@ import java.util.Map;
 import com.evoslab.cookielicious.core.CookieliciousConfig;
 import com.evoslab.cookielicious.core.CookieliciousConfig.Common;
 
+import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;
+
 public class CookieliciousMap {
-	private final Map<String, Boolean> map = new HashMap<>();
+	private final Map<String, ConfigValue<Boolean>> map = new HashMap<>();
 	
 	public CookieliciousMap() {
 		Common common = CookieliciousConfig.COMMON;
-		map.put("vanilla_cookies", common.enableVanillaCookies.get());
-		map.put("strawberry_cookies", common.enableStrawberryCookies.get());
-		map.put("vanilla_cookie_tiles", common.enableVanillaCookieTiles.get());
-		map.put("strawberry_cookie_tiles", common.enableStrawberryCookieTiles.get());
-		map.put("chocolate_cookie_tiles", common.enableChocolateCookieTiles.get());
+		map.put("vanilla_cookies", common.enableVanillaCookies);
+		map.put("strawberry_cookies", common.enableStrawberryCookies);
+		map.put("vanilla_cookie_tiles", common.enableVanillaCookieTiles);
+		map.put("strawberry_cookie_tiles", common.enableStrawberryCookieTiles);
+		map.put("chocolate_cookie_tiles", common.enableChocolateCookieTiles);
 	}
 	
 	public boolean getValue(String key) {
-		return map.containsKey(key) ? map.get(key) : false;
+		return map.containsKey(key) ? map.get(key).get() : true;
 	}
 	
 }

@@ -1,12 +1,11 @@
 package com.evoslab.cookielicious.core;
 
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.evoslab.cookielicious.core.other.CookieliciousCompat;
-import com.evoslab.cookielicious.core.other.recipe.CookieliciousRecipeCondition;
 import com.evoslab.cookielicious.core.other.recipe.CookieliciousMap;
+import com.evoslab.cookielicious.core.other.recipe.CookieliciousRecipeCondition;
 import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
 
 import net.minecraftforge.common.MinecraftForge;
