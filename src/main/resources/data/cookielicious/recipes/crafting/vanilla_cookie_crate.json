@@ -18,6 +18,10 @@
 		{
 		"type": "forge:mod_loaded",
 		"modid": "quark"
+		},
+		{
+		"type": "cookielicious:condition",
+		"condition": "vanilla_cookie"
 		}
 	]
 }

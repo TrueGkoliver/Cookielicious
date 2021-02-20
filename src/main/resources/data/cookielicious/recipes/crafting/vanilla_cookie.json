@@ -18,5 +18,11 @@
     "result": {
         "item": "cookielicious:vanilla_cookie",
         "count": 8
+    },
+	"conditions": [
+    {
+      "type": "cookielicious:condition",
+      "condition": "vanilla_cookie"
     }
+  ]
 }

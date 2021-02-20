@@ -4,5 +4,11 @@
     "item": "cookielicious:sandwich_cookie_tiles"
   },
   "result": "cookielicious:sandwich_cookie_tile_stairs",
-  "count": 1
+  "count": 1,
+	"conditions": [
+    {
+      "type": "cookielicious:condition",
+      "condition": "sandwich_cookie_tiles"
+    }
+  ]
 }

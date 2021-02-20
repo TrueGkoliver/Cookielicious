@@ -15,9 +15,13 @@
         "count": 4
     },
 	"conditions": [
-		{
+	  {
 		"type": "forge:mod_loaded",
 		"modid": "farmersdelight"
-		}
-	]
+	  },
+	{
+      "type": "cookielicious:condition",
+      "condition": "honey_cookie_tiles"
+    }
+  ]
 }

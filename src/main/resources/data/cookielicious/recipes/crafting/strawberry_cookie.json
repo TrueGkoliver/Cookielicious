@@ -18,5 +18,11 @@
     "result": {
         "item": "cookielicious:strawberry_cookie",
         "count": 8
+    },
+	"conditions": [
+	{
+      "type": "cookielicious:condition",
+      "condition": "strawberry_cookie"
     }
+	]
 }

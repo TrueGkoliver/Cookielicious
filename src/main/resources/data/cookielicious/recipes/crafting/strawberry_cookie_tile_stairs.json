@@ -13,5 +13,11 @@
     "result": {
         "item": "cookielicious:strawberry_cookie_tile_stairs",
         "count": 4
+    },
+	"conditions": [
+	{
+      "type": "cookielicious:condition",
+      "condition": "strawberry_cookie_tiles"
     }
+	]
 }

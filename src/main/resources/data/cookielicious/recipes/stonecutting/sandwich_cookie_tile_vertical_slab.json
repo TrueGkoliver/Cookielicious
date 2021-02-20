@@ -9,6 +9,10 @@
     {
       "type": "abnormals_core:quark_flag",
       "flag": "vertical_slabs"
-    }
+    },
+	{
+	  "type": "cookielicious:condition",
+	  "condition": "sandwich_cookie_tiles"
+	}
   ]
 }
