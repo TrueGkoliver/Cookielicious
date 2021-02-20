@@ -1,19 +1,23 @@
 package com.evoslab.cookielicious.core.other.recipe;
 
+import java.util.Hashtable;
+
 import com.evoslab.cookielicious.core.Cookielicious;
 import com.google.gson.JsonObject;
 
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 
 public class CookieliciousRecipeCondition implements ICondition {
-	private final CookieliciousMap map;
+	
+	public static final Hashtable<String, ConfigValue<Boolean>> TABLE = new Hashtable<>();
+	
 	private final ResourceLocation location;
 	private final String condition;
 	
-	public CookieliciousRecipeCondition(CookieliciousMap map, ResourceLocation location, String condition) {
-		this.map = map;
+	public CookieliciousRecipeCondition(ResourceLocation location, String condition) {
 		this.location = location;
 		this.condition = condition;
 	}
@@ -25,15 +29,13 @@ public class CookieliciousRecipeCondition implements ICondition {
 
 	@Override
 	public boolean test() {
-		return map.getValue(condition);
+		return TABLE.containsKey(this.condition) ? TABLE.get(this.condition).get() : true;
 	}
 	
 	public static class Serializer implements IConditionSerializer<CookieliciousRecipeCondition> {
-		private final CookieliciousMap map;
 		private final ResourceLocation location;
 		
-		public Serializer(CookieliciousMap map, String name) {
-			this.map = map;
+		public Serializer(String name) {
 			this.location = new ResourceLocation(Cookielicious.MOD_ID, name);
 		}
 		
@@ -44,7 +46,7 @@ public class CookieliciousRecipeCondition implements ICondition {
 
 		@Override
 		public CookieliciousRecipeCondition read(JsonObject json) {
-			return new CookieliciousRecipeCondition(this.map, this.location, json.getAsJsonPrimitive("condition").getAsString());
+			return new CookieliciousRecipeCondition(this.location, json.getAsJsonPrimitive("condition").getAsString());
 		}
 
 		@Override
