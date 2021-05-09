@@ -24,29 +24,29 @@ public class CookieliciousItems {
 
     public static class Properties {
     	public static final Item.Properties VANILLA = new Item.Properties()
-    			.group(ItemGroup.FOOD)
+    			.tab(ItemGroup.TAB_FOOD)
     			.food(new Food.Builder()
-    					.hunger(2)
-    					.saturation(1f)
+    					.nutrition(2)
+    					.saturationMod(1f)
     					.effect(()-> new EffectInstance(NeapolitanEffects.VANILLA_SCENT.get(), 120, 0), 1f)
-    					.fastToEat()
+    					.fast()
     					.build());
     	
     	public static final Item.Properties SANDWICH = new Item.Properties()
-    			.group(ItemGroup.FOOD)
+    			.tab(ItemGroup.TAB_FOOD)
     			.food(new Food.Builder()
-    					.hunger(4)
-    					.saturation(0.5f)
+    					.nutrition(4)
+    					.saturationMod(0.5f)
     					.effect(()-> new EffectInstance(NeapolitanEffects.SUGAR_RUSH.get(), 120, 0), 1f)
-    					.fastToEat()
+    					.fast()
     					.build());
     	
     	public static final Item.Properties STRAWBERRY = new Item.Properties()
-    			.group(ItemGroup.FOOD)
+    			.tab(ItemGroup.TAB_FOOD)
     			.food(new Food.Builder()
-    					.hunger(2)
-    					.saturation(1f)
-    					.fastToEat()
+    					.nutrition(2)
+    					.saturationMod(1f)
+    					.fast()
     					.build());
     }
     

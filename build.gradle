@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.1.+', changing: true
     }
 }
 
@@ -58,10 +58,10 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'cookielicious', '--all', '--output', file('src/generated/resources/')
 
             mods {
-                examplemod {
+                cookielicious {
                     source sourceSets.main
                 }
             }
@@ -74,11 +74,12 @@ dependencies {
 
     implementation fg.deobf("curse.maven:abnormals-core-382216:${ac_id}")
     implementation fg.deobf("curse.maven:neapolitan-382016:${neapolitan_id}")
-    implementation fg.deobf("curse.maven:appleskin-248787:${appleskin_id}")
 	
 	implementation fg.deobf("curse.maven:farmersdelight-398521:${fd_id}")
 	implementation fg.deobf("curse.maven:autoreglib-250363:${arl_id}")
 	implementation fg.deobf("curse.maven:quark-243121:${quark_id}")
+	
+	implementation fg.deobf("curse.maven:differentiate-450748:${differentiate_id}")
 }
 
 repositories {
@@ -87,7 +88,6 @@ repositories {
     }
 }
 
-// Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
