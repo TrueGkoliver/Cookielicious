@@ -1,7 +1,5 @@
 package com.evoslab.cookielicious.core;
 
-import com.evoslab.cookielicious.core.other.CookieliciousCompat;
-
 import co.eltrut.differentiate.core.registrator.Registrator;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,17 +22,14 @@ public class Cookielicious {
     public Cookielicious() {
     	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CookieliciousConfig.COMMON_SPEC);
     	
-        modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::doCommonStuff);
         modEventBus.addListener(this::doClientStuff);
         instance = this;
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-	private void setup(final FMLCommonSetupEvent event) {
-    	event.enqueueWork(() -> {
-    		CookieliciousCompat.registerCompostables();
-    	});
+	private void doCommonStuff(final FMLCommonSetupEvent event) {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
