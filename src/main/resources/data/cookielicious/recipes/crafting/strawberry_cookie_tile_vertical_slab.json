@@ -20,7 +20,7 @@
       "flag": "vertical_slabs"
     },
 	{
-      "type": "cookielicious:condition",
+      "type": "differentiate:condition",
       "condition": "strawberry_cookie_tiles"
     }
   ]

@@ -11,7 +11,7 @@
       "flag": "vertical_slabs"
     },
 	{
-	  "type": "cookielicious:condition",
+	  "type": "differentiate:condition",
 	  "condition": "sandwich_cookie_tiles"
 	}
   ]

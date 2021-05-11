@@ -21,7 +21,7 @@
     },
 	"conditions": [
 	{
-      "type": "cookielicious:condition",
+      "type": "differentiate:condition",
       "condition": "strawberry_cookie"
     }
 	]

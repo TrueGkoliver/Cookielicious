@@ -20,7 +20,7 @@
 		"modid": "farmersdelight"
 		},
 	{
-      "type": "cookielicious:condition",
+      "type": "differentiate:condition",
       "condition": "sweet_berry_cookie_tiles"
     }
 	]

@@ -15,7 +15,7 @@
       "modid": "quark"
     },
 	{
-      "type": "cookielicious:condition",
+      "type": "differentiate:condition",
       "condition": "vanilla_cookie"
     }
   ]

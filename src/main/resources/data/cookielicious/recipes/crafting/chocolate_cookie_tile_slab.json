@@ -14,7 +14,7 @@
     },
 	"conditions": [
     {
-      "type": "cookielicious:condition",
+      "type": "differentiate:condition",
       "condition": "chocolate_cookie_tiles"
     }
   ]

@@ -2,8 +2,7 @@ package com.evoslab.cookielicious.core;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.evoslab.cookielicious.core.other.recipe.CookieliciousRecipeCondition;
-
+import co.eltrut.differentiate.core.condition.BooleanRecipeCondition;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;
 
@@ -35,15 +34,15 @@ public class CookieliciousConfig {
 			
 			builder.pop();
 			
-			CookieliciousRecipeCondition.TABLE.put("vanilla_cookies", enableVanillaCookies);
-			CookieliciousRecipeCondition.TABLE.put("strawberry_cookies", enableStrawberryCookies);
-			CookieliciousRecipeCondition.TABLE.put("sandwich_cookies", enableOreoCookies);
-			CookieliciousRecipeCondition.TABLE.put("vanilla_cookie_tiles", enableVanillaCookieTiles);
-			CookieliciousRecipeCondition.TABLE.put("strawberry_cookie_tiles", enableStrawberryCookieTiles);
-			CookieliciousRecipeCondition.TABLE.put("chocolate_cookie_tiles", enableChocolateCookieTiles);
-			CookieliciousRecipeCondition.TABLE.put("sandwich_cookie_tiles", enableOreoCookieTiles);
-			CookieliciousRecipeCondition.TABLE.put("honey_cookie_tiles", enableHoneyCookieTiles);
-			CookieliciousRecipeCondition.TABLE.put("sweet_berry_cookie_tiles", enableSweetBerryCookieTiles);
+			BooleanRecipeCondition.TABLE.put("vanilla_cookies", enableVanillaCookies);
+			BooleanRecipeCondition.TABLE.put("strawberry_cookies", enableStrawberryCookies);
+			BooleanRecipeCondition.TABLE.put("sandwich_cookies", enableOreoCookies);
+			BooleanRecipeCondition.TABLE.put("vanilla_cookie_tiles", enableVanillaCookieTiles);
+			BooleanRecipeCondition.TABLE.put("strawberry_cookie_tiles", enableStrawberryCookieTiles);
+			BooleanRecipeCondition.TABLE.put("chocolate_cookie_tiles", enableChocolateCookieTiles);
+			BooleanRecipeCondition.TABLE.put("sandwich_cookie_tiles", enableOreoCookieTiles);
+			BooleanRecipeCondition.TABLE.put("honey_cookie_tiles", enableHoneyCookieTiles);
+			BooleanRecipeCondition.TABLE.put("sweet_berry_cookie_tiles", enableSweetBerryCookieTiles);
 		}
 		
 	}
