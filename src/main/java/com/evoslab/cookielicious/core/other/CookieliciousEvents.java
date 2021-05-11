@@ -18,7 +18,11 @@ public class CookieliciousEvents {
 		TradeUtil.addVillagerTrades(event, VillagerProfession.FARMER, TradeUtil.JOURNEYMAN,
 				new AbnormalsTrade(3, CookieliciousItems.SANDWICH_COOKIE.get(), 18, 12, 10),
 				new AbnormalsTrade(3, CookieliciousItems.STRAWBERRY_COOKIE.get(), 18, 12, 10),
-				new AbnormalsTrade(3, CookieliciousItems.VANILLA_COOKIE.get(), 18, 12, 10));
+				new AbnormalsTrade(3, CookieliciousItems.VANILLA_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.CHOCOLATE_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.BANANA_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.MINT_COOKIE.get(), 18, 12, 10),
+				new AbnormalsTrade(3, CookieliciousItems.ADZUKI_COOKIE.get(), 18, 12, 10));
 	}
 	
 }
