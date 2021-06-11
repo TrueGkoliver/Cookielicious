@@ -3,14 +3,15 @@ package com.evoslab.cookielicious.core.registry;
 import com.evoslab.cookielicious.common.item.CookieItem;
 import com.evoslab.cookielicious.common.item.HealingCookieItem;
 import com.evoslab.cookielicious.core.Cookielicious;
-import com.minecraftabnormals.neapolitan.core.registry.NeapolitanEffects;
 
 import co.eltrut.differentiate.core.registrator.ItemHelper;
+import co.eltrut.differentiate.core.util.CompatUtil.Mods;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
@@ -31,17 +32,17 @@ public class CookieliciousItems {
     
     public static class Properties {
     	
-    	public static final Item.Properties VANILLA = getCookieProps(NeapolitanEffects.VANILLA_SCENT.get());
-    	public static final Item.Properties CHOCOLATE = getCookieProps(NeapolitanEffects.SUGAR_RUSH.get());
-    	public static final Item.Properties SANDWICH = getCookieProps(NeapolitanEffects.SUGAR_RUSH.get(), 4, 0.5F);
+    	public static final Item.Properties VANILLA = getCookieProps(Effects.VANILLA_SCENT);
+    	public static final Item.Properties CHOCOLATE = getCookieProps(Effects.SUGAR_RUSH);
+    	public static final Item.Properties SANDWICH = getCookieProps(Effects.SUGAR_RUSH, 4, 0.5F);
     	public static final Item.Properties STRAWBERRY = new Item.Properties().tab(ItemGroup.TAB_FOOD).food(new Food.Builder()
     			.nutrition(2)
     			.saturationMod(1F)
     			.fast()
     			.build());
-    	public static final Item.Properties BANANA = getCookieProps(NeapolitanEffects.AGILITY.get());
-    	public static final Item.Properties MINT = getCookieProps(NeapolitanEffects.BERSERKING.get());
-    	public static final Item.Properties ADZUKI = getCookieProps(NeapolitanEffects.HARMONY.get());
+    	public static final Item.Properties BANANA = getCookieProps(Effects.AGILITY);
+    	public static final Item.Properties MINT = getCookieProps(Effects.BERSERKING);
+    	public static final Item.Properties ADZUKI = getCookieProps(Effects.HARMONY);
     	
     	public static Item.Properties getCookieProps(Effect effect) {
     		return getCookieProps(effect, 2, 1F);
@@ -56,6 +57,19 @@ public class CookieliciousItems {
     				.build());
     	}
     	
+    }
+    
+    public static class Effects {
+    	
+    	public static final Effect VANILLA_SCENT = getEffect("vanilla_scent");
+    	public static final Effect SUGAR_RUSH = getEffect("sugar_rush");
+    	public static final Effect AGILITY = getEffect("agility");
+    	public static final Effect BERSERKING = getEffect("berserking");
+    	public static final Effect HARMONY = getEffect("harmony");
+    	
+    	public static Effect getEffect(String id) {
+    		return ForgeRegistries.POTIONS.getValue(new ResourceLocation(Mods.NEAPOLITAN, id));
+    	}
     }
     
 }
