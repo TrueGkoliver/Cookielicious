@@ -1,7 +1,8 @@
 {
-  "item.cookielicious.strawberry_cookie": "Strawberry Cookie",
   "item.cookielicious.vanilla_cookie": "Vanilla Cookie",
-  "item.cookielicious.sandwich_cookie": "Oreo",
+  "item.cookielicious.chocolate_cookie": "Chocolate Cookie",
+  "item.cookielicious.strawberry_cookie": "Strawberry Cookie",
+  "item.cookielicious.sandwich_cookie": "Oreo Cookie",
   
   "block.cookielicious.strawberry_cookie_tiles": "Strawberry Cookie Tiles",
   "block.cookielicious.strawberry_cookie_tile_slab": "Strawberry Cookie Tile Slab",
@@ -21,11 +22,11 @@
   "block.cookielicious.vanilla_cookie_tile_vertical_slab": "Vanilla Cookie Tile Vertical Slab",
   "block.cookielicious.vanilla_cookie_crate": "Vanilla Cookie Crate",
   
-  "block.cookielicious.sandwich_cookie_tiles": "Oreo Tiles",
-  "block.cookielicious.sandwich_cookie_tile_slab": "Oreo Tile Slab",
-  "block.cookielicious.sandwich_cookie_tile_stairs": "Oreo Tile Stairs",
-  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Oreo Tile Vertical Slab",
-  "block.cookielicious.sandwich_cookie_crate": "Oreo Crate",
+  "block.cookielicious.sandwich_cookie_tiles": "Oreo Cookie Tiles",
+  "block.cookielicious.sandwich_cookie_tile_slab": "Oreo Cookie Tile Slab",
+  "block.cookielicious.sandwich_cookie_tile_stairs": "Oreo Cookie Tile Stairs",
+  "block.cookielicious.sandwich_cookie_tile_vertical_slab": "Oreo Cookie Tile Vertical Slab",
+  "block.cookielicious.sandwich_cookie_crate": "Oreo Cookie Crate",
   
   "block.cookielicious.honey_cookie_tiles": "Honey Cookie Tiles",
   "block.cookielicious.honey_cookie_tile_slab": "Honey Cookie Tile Slab",
