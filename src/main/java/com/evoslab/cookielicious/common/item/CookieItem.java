@@ -5,8 +5,8 @@ import net.minecraft.item.Item;
 
 public class CookieItem extends Item implements ICompostableItem {
 
-	public CookieItem(Properties p_i48487_1_) {
-		super(p_i48487_1_);
+	public CookieItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

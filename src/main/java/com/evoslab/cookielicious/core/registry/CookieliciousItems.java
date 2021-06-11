@@ -35,10 +35,10 @@ public class CookieliciousItems {
     	public static final Item.Properties VANILLA = getCookieProps(Effects.VANILLA_SCENT);
     	public static final Item.Properties CHOCOLATE = getCookieProps(Effects.SUGAR_RUSH);
     	public static final Item.Properties SANDWICH = getCookieProps(Effects.SUGAR_RUSH, 4, 0.5F);
-    	public static final Item.Properties STRAWBERRY = new Item.Properties().tab(ItemGroup.TAB_FOOD).food(new Food.Builder()
-    			.nutrition(2)
-    			.saturationMod(1F)
-    			.fast()
+    	public static final Item.Properties STRAWBERRY = new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder()
+    			.hunger(2)
+    			.saturation(1F)
+    			.fastToEat()
     			.build());
     	public static final Item.Properties BANANA = getCookieProps(Effects.AGILITY);
     	public static final Item.Properties MINT = getCookieProps(Effects.BERSERKING);
@@ -49,11 +49,11 @@ public class CookieliciousItems {
     	}
     	
     	public static Item.Properties getCookieProps(Effect effect, int nutrition, float saturation) {
-    		return new Item.Properties().tab(ItemGroup.TAB_FOOD).food(new Food.Builder()
-    				.nutrition(nutrition)
-    				.saturationMod(saturation)
+    		return new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder()
+    				.hunger(nutrition)
+    				.saturation(saturation)
     				.effect(() -> new EffectInstance(effect, 120, 0), 1F)
-    				.fast()
+    				.fastToEat()
     				.build());
     	}
     	
