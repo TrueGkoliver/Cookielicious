@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cookielicious:block/mint_cookie_tiles_slab"
+    },
+    "type=double": {
+      "model": "cookielicious:block/mint_cookie_tiles"
+    },
+    "type=top": {
+      "model": "cookielicious:block/mint_cookie_tiles_slab_top"
+    }
+  }
+}
