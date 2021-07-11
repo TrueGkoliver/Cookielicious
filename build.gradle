@@ -1,19 +1,19 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
-        maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+        //maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.1.+', changing: true
-		classpath group: "org.spongepowered", name: "mixingradle", version: "0.7-SNAPSHOT"
+		//classpath group: "org.spongepowered", name: "mixingradle", version: "0.7-SNAPSHOT"
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-apply plugin: "org.spongepowered.mixin"
+//apply plugin: "org.spongepowered.mixin"
 
 version = "${mc_version}-${mod_version}"
 group = 'com.evoslab.cookielicious'
@@ -83,7 +83,7 @@ dependencies {
 	
 	implementation fg.deobf("curse.maven:differentiate-450748:${differentiate_id}")
 	
-	annotationProcessor 'org.spongepowered:mixin:0.8.2:processor'
+	//annotationProcessor 'org.spongepowered:mixin:0.8.2:processor'
 }
 
 repositories {
