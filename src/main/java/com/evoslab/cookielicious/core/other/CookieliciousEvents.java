@@ -16,7 +16,6 @@ public class CookieliciousEvents {
 	@SubscribeEvent
 	public static void onVillagerTrades(VillagerTradesEvent event) {
 		TradeUtil.addVillagerTrades(event, VillagerProfession.FARMER, TradeUtil.JOURNEYMAN,
-				new AbnormalsTrade(3, CookieliciousItems.SANDWICH_COOKIE.get(), 18, 12, 10),
 				new AbnormalsTrade(3, CookieliciousItems.STRAWBERRY_COOKIE.get(), 18, 12, 10),
 				new AbnormalsTrade(3, CookieliciousItems.VANILLA_COOKIE.get(), 18, 12, 10),
 				new AbnormalsTrade(3, CookieliciousItems.CHOCOLATE_COOKIE.get(), 18, 12, 10),

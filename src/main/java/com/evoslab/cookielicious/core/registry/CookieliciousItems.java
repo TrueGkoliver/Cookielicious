@@ -24,7 +24,6 @@ public class CookieliciousItems {
 	
     public static final RegistryObject<Item> VANILLA_COOKIE = HELPER.createItem("vanilla_cookie", () -> new CookieItem(Properties.VANILLA));
     public static final RegistryObject<Item> CHOCOLATE_COOKIE = HELPER.createItem("chocolate_cookie", () -> new CookieItem(Properties.CHOCOLATE));
-    public static final RegistryObject<Item> SANDWICH_COOKIE = HELPER.createItem("sandwich_cookie", () -> new CookieItem(Properties.CHOCOLATE));
     public static final RegistryObject<Item> STRAWBERRY_COOKIE = HELPER.createItem("strawberry_cookie", () -> new HealingCookieItem(1F, Properties.STRAWBERRY));
     public static final RegistryObject<Item> BANANA_COOKIE = HELPER.createItem("banana_cookie", () -> new CookieItem(Properties.BANANA));
     public static final RegistryObject<Item> MINT_COOKIE = HELPER.createItem("mint_cookie", () -> new CookieItem(Properties.MINT));
@@ -34,7 +33,6 @@ public class CookieliciousItems {
     	
     	public static final Item.Properties VANILLA = getCookieProps(Effects.VANILLA_SCENT);
     	public static final Item.Properties CHOCOLATE = getCookieProps(Effects.SUGAR_RUSH);
-    	public static final Item.Properties SANDWICH = getCookieProps(Effects.SUGAR_RUSH, 4, 0.5F);
     	public static final Item.Properties STRAWBERRY = new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder()
     			.hunger(2)
     			.saturation(1F)
