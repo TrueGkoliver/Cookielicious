@@ -12,5 +12,11 @@
   "result": {
     "item": "cookielicious:chocolate_cookie_tiles_wall",
     "count": 6
-  }
+  },
+	"conditions": [
+    {
+      "type": "differentiate:condition",
+      "condition": "chocolate_cookie_tiles"
+    }
+  ]
 }

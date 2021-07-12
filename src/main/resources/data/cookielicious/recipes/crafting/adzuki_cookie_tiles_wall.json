@@ -12,5 +12,11 @@
   "result": {
     "item": "cookielicious:adzuki_cookie_tiles_wall",
     "count": 6
-  }
+  },
+	"conditions": [
+    {
+      "type": "differentiate:condition",
+      "condition": "adzuki_cookie_tiles"
+    }
+  ]
 }

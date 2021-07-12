@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "WRW"
+    ],
+    "key": {
+        "#": {
+            "item": "neapolitan:dried_vanilla_pods"
+        },
+        "W": {
+            "item": "minecraft:wheat"
+        },
+        "R": {
+            "item": "neapolitan:roasted_adzuki_beans"
+        }
+    },
+    "result": {
+        "item": "cookielicious:adzuki_cookie",
+        "count": 8
+    },
+	"conditions": [
+	{
+      "type": "differentiate:condition",
+      "condition": "adzuki_cookie"
+    }
+	]
+}

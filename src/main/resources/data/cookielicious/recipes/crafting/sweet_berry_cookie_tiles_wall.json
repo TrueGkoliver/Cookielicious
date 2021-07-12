@@ -12,5 +12,15 @@
   "result": {
     "item": "cookielicious:sweet_berry_cookie_tiles_wall",
     "count": 6
-  }
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+	{
+	  "type": "differentiate:condition",
+	  "condition": "sweet_berry_cookie_tiles"
+	}
+  ]
 }

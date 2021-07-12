@@ -4,5 +4,11 @@
     "item": "cookielicious:cookie_tiles"
   },
   "result": "cookielicious:cookie_tiles_wall",
-  "count": 1
+  "count": 1,
+	"conditions": [
+    {
+      "type": "differentiate:condition",
+      "condition": "cookie_tiles"
+    }
+  ]
 }
