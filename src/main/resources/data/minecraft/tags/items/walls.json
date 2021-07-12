@@ -5,6 +5,10 @@
 		"cookielicious:vanilla_cookie_tiles_wall",
 		"cookielicious:strawberry_cookie_tiles_wall",
 		"cookielicious:honey_cookie_tiles_wall",
-		"cookielicious:sweet_berry_cookie_tiles_wall"
+		"cookielicious:sweet_berry_cookie_tiles_wall",
+		"cookielicious:cookie_tiles_wall",
+		"cookielicious:mint_cookie_tiles_wall",
+		"cookielicious:banana_cookie_tiles_wall",
+		"cookielicious:adzuki_cookie_tiles_wall"
 	]
 }
