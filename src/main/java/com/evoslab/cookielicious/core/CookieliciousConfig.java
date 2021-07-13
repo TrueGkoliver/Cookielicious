@@ -53,12 +53,12 @@ public class CookieliciousConfig {
 			builder.pop();
 			
 			// Cookies
-			BooleanRecipeCondition.TABLE.put("vanilla_cookies", enableVanillaCookies);
-			BooleanRecipeCondition.TABLE.put("strawberry_cookies", enableStrawberryCookies);
-			BooleanRecipeCondition.TABLE.put("chocolate_cookies", enableChocolateCookies);
-			BooleanRecipeCondition.TABLE.put("mint_cookies", enableMintCookies);
-			BooleanRecipeCondition.TABLE.put("banana_cookies", enableBananaCookies);
-			BooleanRecipeCondition.TABLE.put("adzuki_cookies", enableAdzukiCookies);
+			BooleanRecipeCondition.TABLE.put("vanilla_cookie", enableVanillaCookies);
+			BooleanRecipeCondition.TABLE.put("strawberry_cookie", enableStrawberryCookies);
+			BooleanRecipeCondition.TABLE.put("chocolate_cookie", enableChocolateCookies);
+			BooleanRecipeCondition.TABLE.put("mint_cookie", enableMintCookies);
+			BooleanRecipeCondition.TABLE.put("banana_cookie", enableBananaCookies);
+			BooleanRecipeCondition.TABLE.put("adzuki_cookie", enableAdzukiCookies);
 			
 			// Cookie tiles
 			BooleanRecipeCondition.TABLE.put("vanilla_cookie_tiles", enableVanillaCookieTiles);

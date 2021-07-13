@@ -8,17 +8,17 @@
             "item": "minecraft:wheat"
         },
         "R": {
-            "item": "neapolitan:banana"
+            "item": "neapolitan:chocolate_bar"
         }
     },
     "result": {
-        "item": "cookielicious:banana_cookie",
+        "item": "cookielicious:chocolate_cookie",
         "count": 8
     },
 	"conditions": [
-	{
+    {
       "type": "differentiate:condition",
-      "condition": "banana_cookie"
+      "condition": "chocolate_cookie"
     }
-	]
+  ]
 }

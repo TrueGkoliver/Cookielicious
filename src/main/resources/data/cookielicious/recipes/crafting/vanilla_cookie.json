@@ -1,13 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " # ",
         "WRW"
     ],
     "key": {
-        "#": {
-            "item": "neapolitan:chocolate_bar"
-        },
         "W": {
             "item": "minecraft:wheat"
         },

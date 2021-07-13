@@ -1,13 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " # ",
         "WRW"
     ],
     "key": {
-        "#": {
-            "item": "neapolitan:dried_vanilla_pods"
-        },
         "W": {
             "item": "minecraft:wheat"
         },
