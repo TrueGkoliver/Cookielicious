@@ -74,8 +74,11 @@ public class CookieliciousItems {
     	public static Item.Properties getCookieProps(Effect effect) {
     		return getCookieProps(effect, 2, 1F);
     	}
-    	
+    	/*static {
+    		getCookieProps(Effects.HARMONY);
+		}*/
     	public static Item.Properties getCookieProps(Effect effect, int nutrition, float saturation) {
+
     		return new Item.Properties().group(ItemGroup.FOOD).food(new Food.Builder()
     				.hunger(nutrition)
     				.saturation(saturation)
